@@ -719,7 +719,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--background-color), transparent 25%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -772,6 +772,35 @@ section,
 
 .hero .sign-up-form input[type=submit]:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+}
+
+.hero .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid 
+color-mix(in srgb, var(--default-color), transparent 70%);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .icon-box:hover {
+  border-color: var(--accent-color);
+}
+.hero .icon-box h3 a {
+  color: 
+color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: ease-in-out 0.3s;
+}
+.hero .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+.hero .icon-box:hover h3 a {
+  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
